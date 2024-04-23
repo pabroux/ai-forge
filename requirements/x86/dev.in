@@ -1,0 +1,28 @@
+# Development requirements
+
+-c prod.txt
+black
+mypy
+pylint
+audiofile
+numpy
+jupyter
+keras
+matplotlib
+scikit-learn
+seaborn
+pandas
+tslearn
+torch
+torch-tb-profiler
+torchvision
+torchaudio
+tqdm
+tensorboard
+pytorch-forecasting
+lightning
+pytest
+opensmile
+mlflow
+psutil
+pynvml
