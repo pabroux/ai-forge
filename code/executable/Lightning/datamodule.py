@@ -4,7 +4,7 @@ import torch
 import torchvision
 import torchvision.transforms as transforms
 import lightning.pytorch as pl
-from dataset import ESW1DataSet
+from dataset import ExampleDataSet
 
 # LightningDataModule definition
 
@@ -72,9 +72,9 @@ class TestDataModule(pl.LightningDataModule):
         pass
 
 
-class ESW1DataModule(pl.LightningDataModule):
+class ExampleDataModule(pl.LightningDataModule):
     """
-    DataModule for the ESW1 (Emotional Speech in the Wild 1) corpus
+    DataModule Example
     """
 
     def __init__(
@@ -82,7 +82,7 @@ class ESW1DataModule(pl.LightningDataModule):
         batch_size=9,
         max_seq_len=7 * 60,
         dimension="Valence",
-        gold_standard="Mean",
+        ground_truth="Mean",
         normalize_input=False,
         normalize_target=False,
     ):
@@ -99,9 +99,9 @@ class ESW1DataModule(pl.LightningDataModule):
             batch_size  # Needed if we want to find the best batch_size automatically
         )
         # Dataset
-        self.trainset = ESW1DataSet(
+        self.trainset = ExampleDataSet(
             path_input="../../../data/ESW1/Source/train",
-            path_gold_standard=f"../../../data/ESW1/Gold Standard/Version/v0.0/{dimension}/{gold_standard}/Annotator1/train",
+            path_gold_standard=f"../../../data/ESW1/Gold Standard/Version/v1.0/{dimension}/{ground_truth}/train",
             max_seq_len=max_seq_len,
             padding=True,
             padding_circular=True,
@@ -111,9 +111,9 @@ class ESW1DataModule(pl.LightningDataModule):
             normalize_input_assess=True if normalize_input else False,
             normalize_target=normalize_target,
         )
-        self.devset = ESW1DataSet(
+        self.devset = ExampleDataSet(
             path_input="../../../data/ESW1/Source/dev",
-            path_gold_standard=f"../../../data/ESW1/Gold Standard/Version/v0.0/{dimension}/{gold_standard}/Annotator1/dev",
+            path_gold_standard=f"../../../data/ESW1/Gold Standard/Version/v1.0/{dimension}/{ground_truth}/dev",
             max_seq_len=max_seq_len,
             padding=True,
             padding_circular=True,
@@ -122,9 +122,9 @@ class ESW1DataModule(pl.LightningDataModule):
             normalize_input=normalize_input,
             normalize_target=normalize_target,
         )
-        self.testset = ESW1DataSet(
+        self.testset = ExampleDataSet(
             path_input="../../../data/ESW1/Source/test",
-            path_gold_standard=f"../../../data/ESW1/Gold Standard/Version/v0.0/{dimension}/{gold_standard}/Annotator1/test",
+            path_gold_standard=f"../../../data/ESW1/Gold Standard/Version/v1.0/{dimension}/{ground_truth}/test",
             max_seq_len=max_seq_len,
             padding=True,
             padding_circular=True,
@@ -172,9 +172,11 @@ class ESW1DataModule(pl.LightningDataModule):
         )
 
 
-class ESW1RandomDataModule(pl.LightningDataModule):
+class ExampleRandomDataModule(pl.LightningDataModule):
     """
-    DataModule for the ESW1 (Emotional Speech in the Wild 1) corpus
+    Random DataModule Example
+
+    Train and dev files are chosen randomly within a folder
     """
 
     def __init__(
@@ -182,7 +184,7 @@ class ESW1RandomDataModule(pl.LightningDataModule):
         batch_size=9,
         max_seq_len=7 * 60,
         dimension="Valence",
-        gold_standard="Mean",
+        ground_truth="Mean",
         normalize_input=False,
         normalize_target=False,
         train_percentage=0.7,
@@ -200,9 +202,9 @@ class ESW1RandomDataModule(pl.LightningDataModule):
             batch_size  # Needed if we want to find the best batch_size automatically
         )
         # Dataset
-        self.trainset = ESW1DataSet(
-            path_input="../../../data/ESW1/Source/all",
-            path_gold_standard=f"../../../data/ESW1/Gold Standard/Version/v0.0/{dimension}/{gold_standard}/Annotator1/all",
+        self.trainset = ExampleDataSet(
+            path_input="../../../data/Corpus/Source/all",
+            path_gold_standard=f"../../../data/Corpus/Ground truth/Version/v1.0/{dimension}/{ground_truth}/all",
             max_seq_len=max_seq_len,
             padding=True,
             padding_circular=True,
@@ -223,9 +225,6 @@ class ESW1RandomDataModule(pl.LightningDataModule):
         self.trainset.file_list_with_max_seq = train_file_list
         self.devset.file_list_with_max_seq = dev_file_list
 
-        if normalize_input:
-            self.devset.input_mean = self.trainset.input_mean
-            self.devset.input_var = self.trainset.input_var
         # Dataloader options
         self.trainloader_shuffle = True
         self.trainloader_num_workers = 0
