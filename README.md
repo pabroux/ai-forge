@@ -18,7 +18,7 @@ Here are the code base available:
 
 
 ## Useful Commands
-To launch a _MLflow_ server, in the `code/output/experimentManager/MLflow$` folder, execute the following script:
+To launch a _MLflow_ server, in the `code/output/experimentManager/MLflow` folder, execute the following script:
 ```
 ❯ ./launch_server.sh
 ```
