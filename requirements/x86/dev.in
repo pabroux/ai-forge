@@ -19,6 +19,7 @@ torchvision
 torchaudio
 tqdm
 tensorboard
+transformers
 pytorch-forecasting
 lightning
 pytest
