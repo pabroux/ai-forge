@@ -9,6 +9,9 @@ demo = gr.Interface(
     outputs=[gr.Textbox(label="greeting", lines=3)],
     title="Demo title",
     description="Demo description.",
+    examples=[
+        ["Sulfyderz", 2],
+    ],
 )
 
 demo.queue(
