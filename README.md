@@ -2,7 +2,7 @@
 By Sulfyderz.
 
 ## About
-AIBase gives you the code base of any deep learning project. Don't reinvent the wheel!
+AIBase gives you the code base for any deep learning project. Don't reinvent the wheel!
 
 ## Table of Contents
 
