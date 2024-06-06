@@ -2,19 +2,19 @@
 By Sulfyderz.
 
 ## About
-AIBase gives you the code base for any deep learning project. Don't reinvent the wheel!
+AIBase gives you a codebase for any deep learning project. Don't reinvent the wheel!
 
 ## Table of Contents
 
-- [Code Base Available](#code-base-available)
+- [Codebases Available](#codebases-available)
 - [Useful Commands](#useful-commands)
 
-## Code Base Available
-Here are the code base available:
+## Codebases Available
+Here are the codebases available:
 - Pytorch (Vanilla)
 - Lightning
 > ℹ️
-> Each code base follows the _card_ pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model.
+> Each codebase follows the _card_ pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model.
 
 
 ## Useful Commands
