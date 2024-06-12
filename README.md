@@ -11,6 +11,7 @@ AIBase gives you a codebase for any deep learning project. Don't reinvent the wh
 
 ## Codebases Available
 Here are the codebases available:
+- Hugging Face
 - Pytorch (Vanilla)
 - Lightning
 > ℹ️
