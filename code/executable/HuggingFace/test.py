@@ -1,12 +1,7 @@
-import transformers
-import torch
+from transformers import pipeline
 
-model_id = "meta-llama/Meta-Llama-3-8B"
-
-pipeline = transformers.pipeline(
-    "text-generation",
-    model=model_id,
-    model_kwargs={"torch_dtype": torch.bfloat16},
-    device_map="auto",
-)
-pipeline("Hey how are you doing today?")
+messages = [
+    {"role": "user", "content": "Who are you?"},
+]
+pipe = pipeline("text-generation", model="mistralai/Mistral-7B-Instruct-v0.2")
+pipe(messages)
