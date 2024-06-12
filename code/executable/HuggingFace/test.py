@@ -1,8 +1,5 @@
 import transformers
 import torch
-from huggingface_hub import login
-
-login(token="your_access_token")
 
 model_id = "meta-llama/Meta-Llama-3-8B"
 
