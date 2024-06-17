@@ -13,8 +13,6 @@ demo = gr.Interface(
         ["Sulfyderz", 2],
     ],
     cache_examples=True,
-    batch=True,
-    max_batch_size=5,
 )
 
 demo.queue(
