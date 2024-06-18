@@ -11,7 +11,7 @@ from tqdm import tqdm
 from utils import getLogger
 
 
-def checkGivenArgNb() -> None:
+def check_given_arg_nb() -> None:
     """Checking the number of given arguments
 
     Args:
@@ -29,7 +29,7 @@ def checkGivenArgNb() -> None:
         sys.exit(f"Error: No file found at the given config file path.")
 
 
-def secureExistingModel(
+def secure_existing_model(
     security: bool, path_model_to_save: str, logger: logging.Logger = None
 ) -> None:
     """Checking if a model is already saved at the given path and aborting the training according to the "security" parameter.
@@ -57,7 +57,7 @@ def secureExistingModel(
         logger.warning("Security is OFF. An existing model could be overwritten")
 
 
-def tensorboardAddModel(
+def tensorboard_add_model(
     model: torch.nn.Module, writer: SummaryWriter, dataset: torch.utils.data.Dataset
 ) -> None:
     """Adding the model to tensorboard

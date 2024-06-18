@@ -3,9 +3,9 @@ import torch
 from torch.utils.tensorboard import SummaryWriter
 from utils import getLogger, chooseDevice
 from utils_train import (
-    checkGivenArgNb,
-    secureExistingModel,
-    tensorboardAddModel,
+    check_given_arg_nb,
+    secure_existing_model,
+    tensorboard_add_model,
     train_one_epoch,
     validation_one_epoch,
     EarlyStopping,
@@ -15,7 +15,7 @@ from utils_train import (
 if __name__ == "__main__":
 
     # Checking the number of given arguments
-    checkGivenArgNb()
+    check_given_arg_nb()
 
     # Importing the variables from the config file
     config = __import__(
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     logger = getLogger()
 
     # Checking if a model is already saved at the given path
-    secureExistingModel(security, path_model_to_save, logger)
+    secure_existing_model(security, path_model_to_save, logger)
 
     # Initializing tensorboard
     writer = SummaryWriter(path_tensorboard_to_save)
@@ -94,7 +94,7 @@ if __name__ == "__main__":
     optimizer = optimizer(model)
 
     # Adding the model to tensorboard
-    tensorboardAddModel(model, writer, trainset)
+    tensorboard_add_model(model, writer, trainset)
 
     # Transferring the model into the selected device
     model = model.to(torch_device)
