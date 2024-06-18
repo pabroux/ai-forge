@@ -5,3 +5,6 @@ data/*
 code/output/experimentManager/MLflow/mlflow.db
 code/output/model/
 lightning_logs
+prototype/Gradio/gradio_cached_examples/
+prototype/Gradio/examples/
+prototype/Gradio/flagged/
