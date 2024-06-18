@@ -27,3 +27,4 @@ opensmile
 mlflow
 psutil
 pynvml
+huggingface_hub
