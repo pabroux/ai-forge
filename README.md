@@ -12,10 +12,10 @@ AIBase gives you a codebase for any deep learning project. Don't reinvent the wh
 ## Codebases Available
 Here are the codebases available:
 - Hugging Face
-- Pytorch (Vanilla)
 - Lightning
+- Pytorch (Vanilla)
 > ℹ️
-> Each codebase follows the _card_ pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model.
+> Each codebase follows the pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model.
 
 
 ## Useful Commands
