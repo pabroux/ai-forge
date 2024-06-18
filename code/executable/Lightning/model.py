@@ -3,16 +3,14 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import lightning.pytorch as pl
-from pytorch_forecasting.models.temporal_fusion_transformer.sub_modules import (
-    TimeDistributed,
-)
+from huggingface_hub import PyTorchModelHubMixin
 from metric import ccc
 from loss import ccc_loss
 
 # Model definition
 
 
-class TestNet(pl.LightningModule):
+class TestNet(pl.LightningModule, PyTorchModelHubMixin):
     """
     Model to test whether everything works
 
