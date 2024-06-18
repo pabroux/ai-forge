@@ -2,7 +2,7 @@ import os
 import sys
 import torch
 import torchvision
-from utils import getLogger
+from utils import get_logger
 
 # MAIN
 if __name__ == "__main__":

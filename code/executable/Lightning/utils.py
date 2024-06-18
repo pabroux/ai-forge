@@ -60,7 +60,7 @@ class CustomLogFormatter(logging.Formatter):
 # Function definition
 
 
-def getLogger(level=logging.INFO) -> logging.Logger:
+def get_logger(level=logging.INFO) -> logging.Logger:
     """Initializing and getting a logger
 
     Args:

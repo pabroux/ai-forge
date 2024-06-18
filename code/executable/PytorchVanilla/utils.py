@@ -33,7 +33,7 @@ class CustomLogFormatter(logging.Formatter):
 # Function definition
 
 
-def getLogger() -> logging.Logger:
+def get_logger() -> logging.Logger:
     """Initializing and getting a logger
 
     Args:
@@ -67,7 +67,7 @@ def chooseDevice(device: str, logger: logging.Logger = None) -> torch.device:
 
     """
     if logger is None:
-        logger = getLogger()
+        logger = get_logger()
     if device == "mps" and torch.backends.mps.is_available():
         logger.info("MPS as device")
         torch_device = torch.device("mps")

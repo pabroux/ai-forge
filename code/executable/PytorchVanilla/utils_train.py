@@ -8,7 +8,7 @@ from torch.optim import Optimizer
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
-from utils import getLogger
+from utils import get_logger
 
 
 def check_given_arg_nb() -> None:
@@ -44,7 +44,7 @@ def secure_existing_model(
 
     """
     if logger is None:
-        logger = getLogger()
+        logger = get_logger()
     if security and os.path.exists(path_model_to_save):
         logger.warning(
             "A model is already saved at the given path. Should I go ahead? (Y/n)"
@@ -267,7 +267,7 @@ class EarlyStopping:
         self.optimizer = optimizer
         self.optimizer_best_state_dict = None
         self.restore_best_weights = restore_best_weights
-        self.logger = getLogger() if logger is None else logger
+        self.logger = get_logger() if logger is None else logger
 
     def __call__(self, loss: float) -> None:
         """Assessing the earlyStopping

@@ -1,7 +1,7 @@
 import sys
 import torch
 from torch.utils.tensorboard import SummaryWriter
-from utils import getLogger, chooseDevice
+from utils import get_logger, chooseDevice
 from utils_train import (
     check_given_arg_nb,
     secure_existing_model,
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     device = config.device.lower()
 
     # Initializing logger
-    logger = getLogger()
+    logger = get_logger()
 
     # Checking if a model is already saved at the given path
     secure_existing_model(security, path_model_to_save, logger)

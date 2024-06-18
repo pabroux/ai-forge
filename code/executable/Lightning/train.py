@@ -7,7 +7,7 @@ import sys
 from mlflow.models.signature import infer_signature
 from lightning.pytorch.loggers import MLFlowLogger
 from lightning.pytorch.tuner import Tuner
-from utils import getLogger, CustomProgressBar
+from utils import get_logger, CustomProgressBar
 
 
 if __name__ == "__main__":
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
     ## Loading a custom logger
-    log = getLogger()
+    log = get_logger()
 
     ## Loading a custom progress bar
     custom_bar = CustomProgressBar()
