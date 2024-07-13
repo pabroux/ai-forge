@@ -6,16 +6,16 @@ AIBase gives you a codebase for any deep learning project. Don't reinvent the wh
 
 ## Table of Contents
 
-- [Codebases Available](#codebases-available)
+- [Supported frameworks](#supported-frameworks)
 - [Useful Commands](#useful-commands)
 
-## Codebases Available
-Here are the codebases available:
+## Supported Frameworks
+Here are the supported frameworks:
 - Hugging Face
 - Lightning
 - Pytorch (Vanilla)
 > ℹ️
-> Each codebase follows the pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model.
+> Each framework follows the pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model.
 
 
 ## Useful Commands
