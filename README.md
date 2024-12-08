@@ -1,7 +1,7 @@
-# <img width="20" height="20" src="https://gitlab.com/uploads/-/system/project/avatar/57187700/brain.png?width=96" alt="Banner"> AIBase
+# <img width="20" height="20" src="https://gitlab.com/uploads/-/system/project/avatar/57187700/brain.png?width=96" alt="Banner"> AI-Forge
 
 ## About
-AIBase gives you a codebase for any deep learning project. Don't reinvent the wheel!
+AI-Forge gives you a codebase for any deep learning project. Don't reinvent the wheel!
 
 ## Table of Contents
 
@@ -12,9 +12,9 @@ AIBase gives you a codebase for any deep learning project. Don't reinvent the wh
 Here are the supported frameworks:
 - Hugging Face
 - Lightning
-- Pytorch (Vanilla)
+- Pytorch
 > ℹ️
-> Each framework follows the pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model.
+> Each framework follows the pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model. 
 
 
 ## Useful Commands
