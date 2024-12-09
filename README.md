@@ -13,8 +13,8 @@ Here are the supported frameworks:
 - Hugging Face
 - Lightning
 - Pytorch
-> ℹ️
-> Each framework follows the pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model. 
+
+> ⓘ Note: Each framework follows the pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model. 
 
 
 ## Useful Commands
