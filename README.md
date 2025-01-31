@@ -1,4 +1,10 @@
-# <img width="20" height="20" src="https://gitlab.com/uploads/-/system/project/avatar/57187700/brain.png?width=96" alt="Banner"> AI-Forge
+<p align="center">
+  <img width=375 src="https://github.com/user-attachments/assets/9e48f24f-bb22-4972-96e1-7b33c81430f6">
+</p>
+<p align="center">
+  <b>A simple AI codebase</b>
+</p>
+
 
 ## About
 AI-Forge gives you a codebase for any deep learning project. Don't reinvent the wheel!
