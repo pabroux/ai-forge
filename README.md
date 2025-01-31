@@ -7,7 +7,7 @@
 
 
 ## About
-AI-Forge gives you a codebase for any deep learning project. Don't reinvent the wheel!
+AI-Forge gives you a codebase for any deep learning project.
 
 ## Table of Contents
 
