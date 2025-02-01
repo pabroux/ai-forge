@@ -25,7 +25,8 @@ Here are the supported frameworks:
 - Lightning
 - Pytorch
 
-> ⓘ Note: Each framework follows the pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model. 
+> [!NOTE]
+> Each framework follows the pattern in which you pass to a `train.py` file a config file (e.g. `config_test.py`) containing your model, your dataset and everything required to train a model. 
 
 
 ## Useful Commands
