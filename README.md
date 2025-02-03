@@ -5,8 +5,8 @@
   <b>A simple AI codebase</b>
 </p>
 <p align="center">
-  <a href="https://github.com//Sulfyderz/AI-Forge/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/Sulfyderz/AI-Forge.svg" alt="License Badge">
+  <a href="https://github.com/pabroux/AI-Forge/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/pabroux/AI-Forge.svg" alt="License Badge">
   </a>
 </p>
 
