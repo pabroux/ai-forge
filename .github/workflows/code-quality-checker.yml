@@ -1,0 +1,22 @@
+name: Code quality checker
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+permissions:
+  contents: read
+jobs:
+  code-quality-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+      - name: Check format of Python files
+        run: |
+          nix shell nixpkgs#isort --command isort --profile black -c -q .
+          nix shell nixpkgs#black --command black --check -q .
+      - name: Check format of shell files
+        run: nix shell nixpkgs#shfmt --command shfmt -d .
