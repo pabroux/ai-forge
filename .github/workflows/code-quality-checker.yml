@@ -16,7 +16,7 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@main
       - name: Check format of Python files
         run: |
-          nix shell nixpkgs#isort --command isort --profile black -c -q .
           nix shell nixpkgs#black --command black --check -q .
+          nix shell nixpkgs#isort --command isort --profile black -c -q .
       - name: Check format of shell files
         run: nix shell nixpkgs#shfmt --command shfmt -d .
