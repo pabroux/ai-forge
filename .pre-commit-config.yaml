@@ -1,0 +1,21 @@
+repos:
+  - repo: local 
+    hooks:
+      - id: isort
+        name: isort (Python import sorter)
+        description: This hook checks Python files with isort.
+        entry: bash -c 'for arg in "$@"; do nix shell nixpkgs#isort --command isort --profile black $arg; done;' --
+        language: system
+        types_or: [python, pyi]
+      - id: black
+        name: Black (Python formatter)
+        description: This hook checks Python files with Black.
+        entry: bash -c 'for arg in "$@"; do nix shell nixpkgs#black --command black -q $arg; done;' --
+        language: system
+        types_or: [python, pyi]
+      - id: gitleaks
+        name: Gitleaks (secret scanner)
+        description: This hook checks the existence of secrets.
+        entry: bash -c 'nix shell nixpkgs#gitleaks --command gitleaks git --pre-commit --redact --staged --no-banner --verbose 2> /dev/null; nix shell nixpkgs#gitleaks --command gitleaks dir --redact --no-banner --verbose 2> /dev/null'
+        language: system
+        pass_filenames: false
