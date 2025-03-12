@@ -9,6 +9,10 @@
     <img src="https://img.shields.io/github/license/pabroux/AI-Forge.svg" alt="License Badge">
   </a>
 </p>
+<p align="center">
+  <img src="https://github.com/pabroux/ai-forge/actions/workflows/code-quality-checker.yml/badge.svg" alt="Code Quality Checker Badge">
+  <img src="https://github.com/pabroux/ai-forge/actions/workflows/secret-scanner.yml/badge.svg" alt="Secret Scanner Badge">
+</p>
 
 
 ## About
