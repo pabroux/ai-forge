@@ -28,5 +28,5 @@ Here are the implemented frameworks:
 ## Useful Commands
 To launch a _MLflow_ server, in the `service/experiment-manager/mlflow` folder, execute the following script:
 ```
-./launch-server.sh
+./launch_server.sh
 ```

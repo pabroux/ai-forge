@@ -1,8 +1,9 @@
+import copy
+import logging
 import os
 import sys
 import typing
-import logging
-import copy
+
 import torch
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader

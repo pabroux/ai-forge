@@ -1,13 +1,12 @@
 import importlib
 import importlib.util
-import lightning.pytorch as pl
 import os
 import sys
-from utils import get_logger, CustomProgressBar
 
+import lightning.pytorch as pl
+from utils import CustomProgressBar, get_logger
 
 if __name__ == "__main__":
-
     # AUTOMATIC (NON-CONFIGURABLE)
     ## Checking the given parameters
     if len(sys.argv) != 3:

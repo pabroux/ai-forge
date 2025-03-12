@@ -1,9 +1,10 @@
 import copy
 import random
+
+import lightning.pytorch as pl
 import torch
 import torchvision
 import torchvision.transforms as transforms
-import lightning.pytorch as pl
 from dataset import ExampleDataSet
 
 # LightningDataModule definition

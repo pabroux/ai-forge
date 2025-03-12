@@ -1,17 +1,16 @@
 import importlib
 import importlib.util
-import lightning.pytorch as pl
-import mlflow
 import os
 import sys
-from mlflow.models.signature import infer_signature
+
+import lightning.pytorch as pl
+import mlflow
 from lightning.pytorch.loggers import MLFlowLogger
 from lightning.pytorch.tuner import Tuner
-from utils import get_logger, CustomProgressBar
-
+from mlflow.models.signature import infer_signature
+from utils import CustomProgressBar, get_logger
 
 if __name__ == "__main__":
-
     # AUTOMATIC (NON-CONFIGURABLE)
     ## Configuration file to load
     config_path = (

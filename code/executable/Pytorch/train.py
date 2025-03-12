@@ -1,19 +1,18 @@
 import sys
+
 import torch
 from torch.utils.tensorboard import SummaryWriter
-from utils import get_logger, chooseDevice
+from utils import chooseDevice, get_logger
 from utils_train import (
+    EarlyStopping,
     check_given_arg_nb,
     secure_existing_model,
     tensorboard_add_model,
     train_one_epoch,
     validation_one_epoch,
-    EarlyStopping,
 )
 
-
 if __name__ == "__main__":
-
     # Checking the number of given arguments
     check_given_arg_nb()
 
@@ -112,7 +111,6 @@ if __name__ == "__main__":
 
     # Optimization loop
     for epoch in range(epochs):
-
         # Train loop (Train one epoch)
         running_train_loss, running_train_metrics = train_one_epoch(
             model,

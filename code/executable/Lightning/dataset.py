@@ -1,10 +1,11 @@
 import math
-import numpy as np
-import pandas as pd
 import os
 import re
-import torch
 from fnmatch import fnmatch
+
+import numpy as np
+import pandas as pd
+import torch
 
 # DataSet definition
 

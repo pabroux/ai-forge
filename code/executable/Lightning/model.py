@@ -1,11 +1,12 @@
 from sqlite3 import Time
+
+import lightning.pytorch as pl
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import lightning.pytorch as pl
 from huggingface_hub import PyTorchModelHubMixin
-from metric import ccc
 from loss import ccc_loss
+from metric import ccc
 
 # Model definition
 

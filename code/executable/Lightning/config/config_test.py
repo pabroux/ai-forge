@@ -1,7 +1,7 @@
 from datamodule import TestDataModule
-from model import TestNet
 from lightning.pytorch.callbacks import EarlyStopping, ModelCheckpoint
 from lightning.pytorch.loggers import MLFlowLogger, TensorBoardLogger
+from model import TestNet
 
 """
 Config Test

@@ -1,9 +1,9 @@
-import torch
-import torchvision.transforms as transforms
-import torchvision
-import model as model
 import loss as lossFunction
 import metric as metric
+import model as model
+import torch
+import torchvision
+import torchvision.transforms as transforms
 
 """ 
 Overall configuration

@@ -1,10 +1,11 @@
+import os
+import sys
+from fnmatch import fnmatch
+
 import audiofile
 import opensmile
-import os
 import pandas as pd
-import sys
 from tqdm import tqdm
-from fnmatch import fnmatch
 
 # Feature extraction methods
 
