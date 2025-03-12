@@ -26,7 +26,7 @@ Here are the implemented frameworks:
 - Pytorch
 
 ## Useful Commands
-To launch a _MLflow_ server, in the `service/experimentManager/MLflow` folder, execute the following script:
+To launch a _MLflow_ server, in the `service/experiment-manager/mlflow` folder, execute the following script:
 ```
-./launch_server.sh
+./launch-server.sh
 ```
