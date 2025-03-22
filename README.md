@@ -5,13 +5,23 @@
   <b>A simple AI codebase</b>
 </p>
 <p align="center">
-  <a href="https://github.com/pabroux/AI-Forge/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/pabroux/AI-Forge.svg" alt="License Badge">
+  <a href="https://github.com/pabroux/ai-forge/blob/master/LICENSE">
+    <picture>
+      <img src="https://img.shields.io/github/license/pabroux/ai-forge.svg?label=Licence" alt="License Badge">
+    </picture>
   </a>
 </p>
 <p align="center">
-  <img src="https://github.com/pabroux/ai-forge/actions/workflows/code-quality-checker.yml/badge.svg" alt="Code Quality Checker Badge">
-  <img src="https://github.com/pabroux/ai-forge/actions/workflows/secret-scanner.yml/badge.svg" alt="Secret Scanner Badge">
+  <a href="https://github.com/pabroux/ai-forge/actions/workflows/code-quality-checker.yml">
+    <picture>
+      <img src="https://github.com/pabroux/ai-forge/actions/workflows/code-quality-checker.yml/badge.svg" alt="Code Quality Checker Badge">
+    </picture>
+  </a>
+  <a href="https://github.com/pabroux/ai-forge/actions/workflows/secret-scanner.yml">
+    <picture>
+      <img src="https://github.com/pabroux/ai-forge/actions/workflows/secret-scanner.yml/badge.svg" alt="Secret Scanner Badge">
+    </picture>
+  </a>
 </p>
 
 
