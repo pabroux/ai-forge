@@ -24,16 +24,13 @@
   </a>
 </p>
 
-
 ## About
 AI-Forge gives you a codebase for any deep learning project.
-
 
 ## Table of Contents
 
 - [Implemented Frameworks](#implemented-frameworks)
 - [Useful Commands](#useful-commands)
-
 
 ## Implemented Frameworks
 
@@ -41,7 +38,6 @@ Here are the implemented frameworks:
 - Hugging Face
 - Pytorch Lightning
 - Pytorch
-
 
 ## Useful Commands
 
