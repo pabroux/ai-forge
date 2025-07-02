@@ -24,6 +24,9 @@
   </a>
 </p>
 
+> [!WARNING]
+> AI-Forge is now deprecated and no longer maintained.
+
 ## About
 AI-Forge gives you a codebase for any deep learning project.
 
