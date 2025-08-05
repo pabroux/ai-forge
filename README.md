@@ -1,5 +1,5 @@
 <p align="center">
-  <img width=375 src="https://github.com/user-attachments/assets/9e48f24f-bb22-4972-96e1-7b33c81430f6">
+  <img width=375 src="https://github.com/user-attachments/assets/36cc0dd3-0d7a-48fd-9bcd-93fcad620bac">
 </p>
 <p align="center">
   <b>A simple AI codebase</b>
